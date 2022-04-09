@@ -3,6 +3,7 @@
 Сайт без интерфейса, работает через команду "alert".
 Для работы нужно файл physic_formuls.html запустить в браузере (закинуть).
 Формулы с их написанием и названием находяться в файле - formuls.txt
+
 // ENG //
 Checking the knowledge of formulas from physics in the course of the 9th grade. 
 The site has no interface, works through the "alert" command.
