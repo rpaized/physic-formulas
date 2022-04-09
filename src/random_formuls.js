@@ -216,28 +216,28 @@ let writeWord;
 let counterPointPlus = 0;
 let counterPointMinus = 0;
 function askErrorFormuls(ask) {
-    while (ask>95) {
-        ask = prompt("Ошибка. Введите число меньше или равное 95");
+    while (ask>=98) {
+        ask = prompt("Ошибка. Введите число меньше или равное 97");
     }
-}
+} 
 let arrayRandomNumber = [];
 let wrongFormulsPhysic = [];
 let wrongNameFormulsPhysic = [];
 let wrongWriteFormuls = [];
 let showNumber = 1;
-let askStartNumber = prompt('С какого номера выводить формулы?');
+let askStartNumber = +prompt('С какого номера выводить формулы?');
 askErrorFormuls(askStartNumber);
-let askEndNumber = prompt('До какого номера выводить формулы?');
+let askEndNumber = +prompt('До какого номера выводить формулы?');
 askErrorFormuls(askEndNumber);
 while (askStartNumber>askEndNumber) {
-    askEndNumber = prompt(`Ошибка. Введите число меньше или равное ${askStartNumber} `);
-}
+    askEndNumber = prompt(`Ошибка. другое Введите число меньше или равное ${askStartNumber} `);
+}; 
 askStartNumber--;
 askEndNumber--;
 let differenceStartEndNumber = (askEndNumber - askStartNumber);
 arrayRandomNumber = Array(differenceStartEndNumber).fill(0).map((e,i)=>i+askStartNumber);
-alert("В некоторых формулах понадобиться вводить символы, которых нет на клавиатуре.");
-alert("Справка: Дельта - delta; Квадрат - **; Пи - Pi; Корень - \\/; Вектор - >; Штрих - ` ");
+alert("В некоторых формулах понадобиться вводить символы, которых нет на клавиатуре." + 
+"\nСправка: Дельта - delta; Квадрат - **; Пи - Pi; Корень - \\/; Вектор - >; Штрих - `");
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
